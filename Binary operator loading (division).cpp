@@ -1,19 +1,16 @@
 #include<iostream>
 using namespace std;
 
-class complex
-{
+class complex {
 	float x, y;
 	public:
 		complex(){
 		}
-		complex(float a,float b)
-		{
+		complex(float a,float b) {
 			x=a;
 			y=b;
 		}
-		complex operator / (complex c)
-		{
+		complex operator / (complex c) {
 			complex c3;
 		//	complex c3,c4;
 		//	int z;
@@ -26,13 +23,12 @@ class complex
 		//	c4.y= (c4.y)/z;
 			return (c3);
 		}
-		void display()
-		{
+		void display() {
 			cout<<x<<" + i("<<y<<")"<<endl;
 		}
 };
-int main()
-{
+
+int main() {
 	complex c1(2,3),c2(4,5);
 	complex c3;
 	c3=c2/c1;
