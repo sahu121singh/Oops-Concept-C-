@@ -7,13 +7,11 @@ class complex
 	public:
 		complex(){
 		}
-		complex(int a,int b)
-		{
+		complex(int a,int b) {
 			x=a;
 			y=b;
 		}
-		complex operator * (complex c)
-		{
+		complex operator * (complex c) {
 			complex c3;
 			
 			c3.x= x*(c.x) - y*(c.y);
@@ -21,13 +19,12 @@ class complex
 			
 			return c3;
 		}
-		void display()
-		{
+		void display() {
 			cout<<x<<" + i("<<y<<")"<<endl;
 		}
 };
-int main()
-{
+
+int main() {
 	complex c1(2,3),c2(4,5);
 	c1.display();
 	c2.display();
