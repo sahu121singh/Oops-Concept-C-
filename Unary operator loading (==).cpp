@@ -1,33 +1,29 @@
 #include<iostream>
 using namespace std;
-class Oper
-{
+class Oper {
 	int a,b;
 	public:
-		Oper()
-		{
+		Oper() {
 			
 		}
-		Oper(int x)
-		{
+		Oper(int x) {
 			a=x;
 		}
 		void operator == ( Oper B);
 		void disp();
 };
-void Oper :: operator == ( Oper B)
-{
+
+void Oper :: operator == ( Oper B) {
 	if (a==B.a)
-	cout<<"equal";
+		cout<<"equal";
 	else
-	cout<<"uequal";
+		cout<<"uequal";
 }
-void Oper :: disp()
-{
+void Oper :: disp() {
 	cout<<a<<endl;
 }
-int main()
-{
+
+int main() {
 	Oper p(10),q(5);
 	p.disp();
 	q==p;
